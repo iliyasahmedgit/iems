@@ -1,6 +1,6 @@
 <x-layouts.app :title="__('Dashboard')">
     <div class="flex flex-col gap-6 p-4">
-        <h1 class="text-2xl font-bold">Equipments Dashboard</h1>
+        <h1 class="text-2xl font-bold">Dashboard</h1>
 
         <div class="overflow-x-auto rounded-lg border border-neutral-200 dark:border-neutral-700">
             <table class="min-w-full divide-y divide-neutral-200 dark:divide-neutral-700">

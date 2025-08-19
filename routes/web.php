@@ -17,6 +17,14 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('EquipmentList');
 
+ Route::view('departments', 'livewire.departments')
+    ->middleware(['auth', 'verified'])
+    ->name('departments');
+
+ Route::view('designation', 'livewire.designation')
+    ->middleware(['auth', 'verified'])
+    ->name('designation');
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 

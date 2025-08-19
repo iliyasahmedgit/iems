@@ -14,9 +14,9 @@
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Platform')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
-                    <flux:navlist.item icon="queue-list" :href="route('EquipmentList')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Equiment List') }}</flux:navlist.item>
-                    <flux:navlist.item icon="building-office" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Departments') }}</flux:navlist.item>
-                    <flux:navlist.item icon="identification" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Designations') }}</flux:navlist.item>
+                    <flux:navlist.item icon="queue-list" :href="route('EquipmentList')" :current="request()->routeIs('EquipmentList')" wire:navigate>{{ __('Equiment List') }}</flux:navlist.item>
+                    <flux:navlist.item icon="building-office" :href="route('departments')" :current="request()->routeIs('departments')" wire:navigate>{{ __('Departments') }}</flux:navlist.item>
+                    <flux:navlist.item icon="identification" :href="route('designation')" :current="request()->routeIs('designation')" wire:navigate>{{ __('Designations') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 
